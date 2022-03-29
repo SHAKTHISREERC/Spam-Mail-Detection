@@ -1,34 +1,15 @@
 # NLP Model in Python & Deployed in Flask
 > The aim of this project to build a machine learning model which can predict if a message/email is spam or not using NLP. 
 
-## Table of contents
-* [General info](#general-info)
-* [Application Flow Diagram](#Application Flow Diagram)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Process](#process)
-* [Code Examples](#code-examples)
-* [Features](#features)
-* [Status](#status)
-* [Contact](#contact)
-
 ## General info
 The workflow of the model looks like this: Train offline -> Make model available as a service -> Predict online. 
 Steps involved:
 1. A classifier is trained offline with spam and non-spam messages.
 2. The trained model is then deployed as a web service to serve users.
 
-## Application Flow Diagram
-![Example screenshot](./Image.jpg)
-
 ## Technologies
-* Python - version 3.5
+* Python
 * sklearn
-
-## Setup
-
-The dataset used and its metadata can be found [here](https://github.com/siddharthoza/NLP-model-for-Spam-E-mail-classification/tree/master/Data). The python file can be downloaded [here](https://github.com/siddharthoza/NLP-model-for-Spam-E-mail-classification/blob/master/app.py) and can be used to reproduce the result. 
-
 
 ## Process
 
@@ -75,23 +56,3 @@ def predict():
 	return render_template('result.html',prediction = my_prediction)
 ````
 
-## Features
-* The model classifier classifies the input message in spam or non-spam with an accuracy of 93% 
-
-The end product looks like this: 
-![Example screenshot](./Capture1.PNG)
-![Example screenshot](./Capture2.PNG)
-
-
-## Status
-Project is:  _finished_
-
-## Contact
-
-Created by me
-
-If you loved what you read here and feel like we can collaborate to produce some exciting stuff, or if you
-just want to shoot a question, please feel free to connect with me on <a href="siddharth.oza@outlook.com" target="_blank">email</a>, 
-<a href="https://www.linkedin.com/in/siddharthoza" target="_blank">LinkedIn</a>
-
-My other projects can be found [here](https://siddharthoza.com).
